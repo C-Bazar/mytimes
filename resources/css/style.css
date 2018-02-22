@@ -6,14 +6,19 @@ header {
   font-weight: bold;
   width: 100%;
   height: 80px;
+  top: 0px;
   border-bottom: solid 1px black;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
 }
 a{
   color: black;
 }
 .logo{
   color: MediumAquamarine;
+  margin-left: 5px;
 }
 
 nav span {
@@ -25,11 +30,123 @@ nav {
   justify-content: flex-end;
 }
 
-div span {
-  padding: 10px 20px;
-  align-self: center;
-}
-div {
+div.logo {
   display: flex;
   align-items: center;
+}
+.image {
+  display: flex;
+  height: 300px;
+  color: white;
+  font-size: 30px;
+  font-family: Georgia;
+  font-weight: bold;
+  margin-top: 16px;
+}
+div {
+  display: block;
+}
+#main {
+  top: 80px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 32px;
+}
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+#phish {
+  font-size: 40px;
+  background-image: url("../img/main.png");
+}
+#cat {
+  background-image: url("../img/cat.png");
+}
+#earth {
+  background-image: url("../img/fall.png");
+}
+#camera {
+  background-image: url("../img/camera.png");
+}
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  display: block;
+}
+.text {
+  width: auto;
+  margin-top: 16px;
+}
+.story {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+.bites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3.bites {
+  font-size: 16px;
+  font-weight: bold;
+}
+span.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  display: block;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  width: 100%;
+  height: 325px;
+  position: relative;
+  top: 120px;
+}
+
+span.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: solid 2px white;
+  display: inline-block;
+  padding-right: 25px;
+}
+footer nav{
+  display: inline-block;
 }
